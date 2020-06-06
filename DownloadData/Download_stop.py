@@ -6,8 +6,8 @@ stops = None
 with open('stopsNew.json', 'r') as file:
     stops = json.load(file)
 
-conn = psycopg2.connect(dbname='server_main', user='admin',
-                        password='anna030499', host='localhost')
+conn = psycopg2.connect(dbname='server_main', user='postgres',
+                        password='14011999ok', host='localhost')
 
 with conn.cursor() as cursor:
     for i in range(len(stops)):
